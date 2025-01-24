@@ -1,8 +1,9 @@
 import { useRef } from "react";
 import { useNavigate } from "react-router";
 import styled from "@emotion/styled";
-import SearchInput from "@components/common/SearchInput";
+import SearchInput from "@components/common/molecules/SearchInput";
 import logo from "@assets/google-logo.svg";
+import { MdSearch as SearchIcon } from "react-icons/md";
 
 const Logo = styled('img')(({
   userSelect: 'none',
@@ -68,8 +69,11 @@ const SearchPage = () => {
       <Logo src={logo} alt="Google logo" />
       <SearchFormContainer>
         <SearchForm onSubmit={handleSubmit} data-testid="search-form">
-          <SearchInput data-testid="search-input" ref={searchInputRef} type="text" />
-
+          <SearchInput
+            data-testid="search-input"
+            icon={<SearchIcon size={20} />}
+            ref={searchInputRef} type="text"
+          />
           <SearchButton role="search">
             Buscar
           </SearchButton>

@@ -30,7 +30,6 @@ const SearchResults: FC<SearchResultProps> = ({hits}) => {
   const [selectedPage, setSelectedPage] = useState<AnimalResult>();
 
   const handleVisit = (page: AnimalResult) => {
-    console.log("handleVisit", page);
     setSelectedPage(page);
   };
 

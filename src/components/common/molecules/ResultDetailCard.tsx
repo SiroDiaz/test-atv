@@ -14,6 +14,8 @@ const CardItem = styled('div')(({
   borderRadius: '8px',
   height: 'fit-content',
   width: '100%',
+  top: 76,
+  position: 'sticky',
 }));
 
 const CardImage = styled('img')(({

@@ -1,4 +1,4 @@
-import Footer from "@components/common/Footer";
+import Footer from "@components/common/templates/Footer";
 import Navbar from "@components/common/organisms/Navbar";
 import { Outlet } from "react-router";
 import { MainAppContainer, MainAppLayout } from "./common";

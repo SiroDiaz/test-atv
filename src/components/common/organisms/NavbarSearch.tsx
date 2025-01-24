@@ -1,6 +1,7 @@
-import { MdApps as AppsIcon } from "react-icons/md";
+import { MdApps as AppsIcon, MdSearch as SearchIcon } from "react-icons/md";
+
 import { RxAvatar as AvatarIcon } from "react-icons/rx";
-import SearchInput from "../SearchInput";
+import SearchInput from "../molecules/SearchInput";
 import { Link, useNavigate, useSearchParams } from "react-router";
 import { ChangeEvent, useRef, useState } from "react";
 import logo from "@assets/google-logo.svg";
@@ -50,6 +51,7 @@ const NavbarSearch = () => {
               <SearchInput
                 ref={searchInputRef}
                 data-testid="search-form-input"
+                icon={<SearchIcon size={20} />}
                 defaultValue={term}
                 type="text"
                 onChange={handleChange}
