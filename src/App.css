@@ -1,0 +1,36 @@
+:root {
+    --primary-color: #282c34;
+    --secondary-color: #61dafb;
+    --neutral-color: #f2f2f2;
+    --font-size: 16px;
+    --font-color: var(--primary-color);
+    --font-family: "Arial", sans-serif;
+    --bg-color: #fff;
+
+    /* Buttons */
+    --btn-neutral-bg: #f8f9fa;
+    --btn-neutral-color: #3c4043;
+    --btn-neutral-border: 1px solid #f8f9fa;
+    --btn-neutral-border-radius: 4px;
+
+    --breakpoint-tablet: 40rem;
+    --breakpoint-laptop: 64rem;
+    --breakpoint-desktop: 80rem;
+    --breakpoint-desktop-xl: 96rem;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    flex: 1;
+    width: 100%;
+    background-color: var(--bg-color);
+    color: var(--font-color);
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+    margin: 0;
+    padding: 0;
+}
